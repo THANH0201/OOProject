@@ -1,6 +1,4 @@
-package Task5;
-import java.util.LinkedList;
-
+package Task6;
 public class CustomerGenerator {
     public CustomerGenerator(int quantity, ServicePoint servicePoint) {
         for (int i = 1; i <= quantity; i++) {
@@ -9,5 +7,4 @@ public class CustomerGenerator {
             servicePoint.addToQueueue(new Customer(i));
         }
     }
-
 }
