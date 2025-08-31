@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OOProject.iml" filepath="$PROJECT_DIR$/OOProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimulationIntro/SimulationIntro.iml" filepath="$PROJECT_DIR$/SimulationIntro/SimulationIntro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Three phase Simulation/Three phase Simulation.iml" filepath="$PROJECT_DIR$/Three phase Simulation/Three phase Simulation.iml" />
     </modules>
   </component>
 </project>
