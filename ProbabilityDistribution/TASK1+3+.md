@@ -1,3 +1,5 @@
+># Task 1
+
 ## The age structure of students
 1. Create the age distribution table of 37 students and map 
 
@@ -17,3 +19,4 @@
 5. Repeat 1000 times to get 1000 the age value  
 6. Output the result of the generation (the age, count times, percent)
 
+># Task 3
