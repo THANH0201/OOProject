@@ -1,5 +1,4 @@
 package Task3;
-
 import java.util.PriorityQueue;
 
 public class Main {
@@ -24,6 +23,10 @@ public class Main {
             System.out.println(print.poll());
         }
         System.out.println();
-        System.out.println("Next event: " + eventList.getremoveEvent());
+        Event nextEvent = eventList.getremoveEvent();
+        //Clock.getInstance().setTime(nextEvent.getTime());
+        System.out.println("Next event: " + nextEvent);
+        //System.out.println("Current time: " + Clock.getInstance().getTime());
+
     }
 }

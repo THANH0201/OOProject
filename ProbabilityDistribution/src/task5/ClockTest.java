@@ -1,7 +1,6 @@
 package task5;
 
 import java.time.LocalDateTime;
-
 public class ClockTest {
 
     public static void main(String[] args) {
