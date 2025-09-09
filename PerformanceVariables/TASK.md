@@ -1,12 +1,12 @@
 ### Task 1: Using an example case (health centre, bank, etc.), discuss the meaning and characterisation of all the performance measures discussed in the lesson material using the concepts of the target system.
 Target system:
-optimize counter utilization (U)
-U = B/T => reduce busy time (B), T is constant
-increase service throughput (X)
-X = C/T => increase number of clients serviced (C)
-Reduce response time (R)
-R = W/C => reduce waiting time (W)
-=> increase support staff to service clients faster.
+optimize counter utilization (U)  
+U = B/T => reduce busy time (B), T is constant  
+increase service throughput (X)  
+X = C/T => increase number of clients serviced (C)  
+Reduce response time (R)  
+R = W/C => reduce waiting time (W)  
+=> increase support staff to service clients faster.  
 
 ### Task 2:  Consider the categories in which performance measures are maintained/updated/computed. (Think in general terms: service point/customer; not in target system terms.)
 1. Maintained: A, C, B, T, R, W
@@ -26,25 +26,25 @@ These are derived variables calculated from the maintained and updated data. The
 [![](https://mermaid.ink/img/pako:eNo90EtvgzAMAOC_EvlMKyAppDlUGrDjpEndqaWHiJiHBkmVhr1Q__sCZcsp9mfHkSeojEIQUPfms2qldeStKDXx5-mcjzdnBrQXstkcsvPxNRIkb7F6J52-PIqymUjuLfa21N9WyhcqPFFBjmg_ugrJyWhcvVj82TsTJDPSqk43pJFuLYAAGtspEM6OGID_xyDnEKaZS3AtDliC8FeFtRx7V0Kp777tKvXJmOGv05qxaUHUsr_5aLwqP6LoZGPl8J-1qBXa3IzagUiSZHkExARfIOKEbylNU5ZSyhLOogC-5-w2imiYUB7v6C7ex_wewM8yNtzyfRixkNOIpSHj-10AqDpn7Mtj2cvO77-pm3D7?type=png)](https://mermaid.live/edit#pako:eNo90EtvgzAMAOC_EvlMKyAppDlUGrDjpEndqaWHiJiHBkmVhr1Q__sCZcsp9mfHkSeojEIQUPfms2qldeStKDXx5-mcjzdnBrQXstkcsvPxNRIkb7F6J52-PIqymUjuLfa21N9WyhcqPFFBjmg_ugrJyWhcvVj82TsTJDPSqk43pJFuLYAAGtspEM6OGID_xyDnEKaZS3AtDliC8FeFtRx7V0Kp777tKvXJmOGv05qxaUHUsr_5aLwqP6LoZGPl8J-1qBXa3IzagUiSZHkExARfIOKEbylNU5ZSyhLOogC-5-w2imiYUB7v6C7ex_wewM8yNtzyfRixkNOIpSHj-10AqDpn7Mtj2cvO77-pm3D7)
 
 ### Task 4: 
-Pseudocode for a three-phase simulation
-While (event list not empty)
-//A Phase: Find time of next event and advance the clock to the next event time
-    nextEvent = eventList.getNextEvent()
-    Clock.setTime(nextEvent.time)
-//B Phase: Execute the event
-    Execute event by getting method associated with event type
-    if next_event.type == "arrival"
-        execute_arrival(next_event)
-    ... other event types ...
-//C Phase: Attempt all C-events
-Any C-events performed?
-if yes, execute C-events
-    while c_event_list not empty
-        c_event = c_event_list.get_next_c_event()
-        execute_c_event(c_event)
-if no, Simulation ends?
-    if yes, stop simulation
-    if no, comeback to A phase
+Pseudocode for a three-phase simulation  
+While (event list not empty)  
+//A Phase: Find time of next event and advance the clock to the next event time  
+    nextEvent = eventList.getNextEvent()  
+    Clock.setTime(nextEvent.time)  
+//B Phase: Execute the event  
+    Execute event by getting method associated with event type  
+    if next_event.type == "arrival"  
+        execute_arrival(next_event)  
+    ... other event types ...  
+//C Phase: Attempt all C-events  
+Any C-events performed?  
+if yes, execute C-events  
+    while c_event_list not empty  
+        c_event = c_event_list.get_next_c_event()  
+        execute_c_event(c_event)  
+if no, Simulation ends?  
+    if yes, stop simulation  
+    if no, comeback to A phase  
 
 ### Task 5: Using the names of the simulator classes, explain the simulator 
 1. what A-phase coding means? 
