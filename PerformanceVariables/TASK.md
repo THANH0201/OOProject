@@ -17,8 +17,7 @@ These variables are continuously updated as events occur: customers arrive, are 
 These are derived variables calculated from the maintained and updated data. They reflect overall performance such as utilization, throughput, and average times.
 
 ### Task 3:  Design two different systems of three or four service points for a real-world destination. Use real-world concepts. Draw diagrams using the graphical representation of a service point shown in section ´Performance Variables´.
-1. graph TD
-   A[Hình Vuông] --> B((Hình Tròn))
-   B --> C{Quyết định}
-   C -->|Có| D[Tiếp tục]
-   C -->|Không| E[Kết thúc]
+1. Hospital
+   ![Flowchart](https://mermaid.ink/img/pako:eNo9kE1PhDAQhv9KM2eWAC3Q7cHEBW9qjHpy8VBp-Uig3ZQ2fhD-uwVc5zTzPvPOZGaGWgsJDJpBf9YdNxa9lpVCPm7PhZusHqV5R4fDzen88hQz9CzbfrJe25tOK0KFZwlDj85MvWr_ULGh0iPMUKlrq6-mciN3nhCG7vnHLkMArekFMGucDMDvHflawrziCmwnR1kB86mQDXeDraBSi7dduHrTerw6jXZtB6zhw-QrdxHcyrLnreHjv2qkEtIU2ikLDJNsGwJshi9gSUZDjPOc5NgTSuIAvlc1jGMcZZgmKU6TY0KXAH62tVFIj1FMIopjkkeEHtMApOj9wQ_7c7cfL78cnGtk?type=png)
+
+2. Bank
