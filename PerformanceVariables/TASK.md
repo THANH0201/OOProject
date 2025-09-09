@@ -48,15 +48,15 @@ if no, Simulation ends?
 
 ### Task 5: Using the names of the simulator classes, explain the simulator 
 1. what A-phase coding means?
-
 In the A-phase coding, the simulation finds the next event in eventList(EventList class), advances the time  to that event's time, and updates the simulation clock accordingly (Clock class).  
-2. what B-phase coding means?
 
+2. what B-phase coding means?
 In the B-phase coding, Execute event by getting method associated with event type(Event class).   
     if next_event.type == "arrival"  
         execute_arrival(next_event) (Arrival class)  
     if next_event.type == "departure"  
         execute_departure(next_event)  
+
 3. what coding C events means?
 In the C-phase coding, the simulation checks if there are any C-events in the CEventList class.  
 If there are, it executes them one by one using their associated methods. If not, it checks if the simulation should end or return to the A-phase.
