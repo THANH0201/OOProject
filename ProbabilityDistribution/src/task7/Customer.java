@@ -45,21 +45,4 @@ public class Customer {
         return String.format("Customer{id=%d, arrivalTime=%.3f}", id, timeStart);
     }
 
-    /*public static void main(String[] args) {
-        Customer customer = new Customer(1);
-        //customer entering
-        customer.setTimeStart(System.currentTimeMillis());
-        //waiting for one second
-        try {
-            Thread.sleep(1000);  // 1000 ms = 1s
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        //customer ready
-        customer.setTimeEnd(System.currentTimeMillis());
-
-        System.out.println("Task4.Customer " + customer.id+ " service time: " + customer.timeSpend()+"s");
-
     }
-    */
-}

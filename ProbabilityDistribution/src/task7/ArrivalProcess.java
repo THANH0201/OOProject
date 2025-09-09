@@ -13,8 +13,8 @@ public class ArrivalProcess {
     public void generateArrival(EventList list, double currentTime) {
         double interval = generator.sample();
         //System.out.println("Interval: " + interval);
-        double arrivalTime = currentTime + interval; // corrected from addition
-        Event newEvent = new Event(arrivalTime, eventType); // updated to use the seconds for Event
+        double arrivalTime = currentTime + interval;
+        Event newEvent = new Event(arrivalTime, eventType);
         list.addEvent(newEvent);
 
     }

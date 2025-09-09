@@ -25,13 +25,6 @@ public class ServicePoint {
             serviceTimes.add(serviceTime);
             clock.advance(serviceTime);
             movCustomer.setTimeEnd(clock.getTime());
-            //try {
-            //    Thread.sleep(serviceTime);
-            //} catch (InterruptedException e) {
-            //    e.printStackTrace();
-            //}
-            //movCustomer.setTimeEnd(System.nanoTime());
-
             double responseTime = waitTime + serviceTime;
             System.out.printf("Customer %d done at %f:\nWait Time: %.5f s\nService Time: %d s\nResponse Time: %.5f s\n\n",  movCustomer.getId(), clock.getTime(), waitTime, serviceTime, responseTime);
         }

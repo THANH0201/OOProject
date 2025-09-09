@@ -5,30 +5,28 @@ import java.util.List;
 public class Test {
 
     public void runTest() {
-        // Khởi tạo bộ sinh sự kiện đến
-        long seed = 12345L; // hoặc System.currentTimeMillis() nếu muốn ngẫu nhiên
+        // create arrival events
+        long seed = 5;
         ArrivalEventGenerator arrivalGen = new ArrivalEventGenerator(10, seed);
         List<Event> arrivals = arrivalGen.getSortedArrivals();
         System.out.println("Generated arrival events:"+ arrivals);
 
-        // Khởi tạo hàng đợi phục vụ
+        // create service point
         ServicePoint servicePoint = new ServicePoint();
 
-        // Tạo khách hàng từ các sự kiện đến và đưa vào hàng đợi
+        // create customers and add them to the service point queue
         CustomerGenerator customerGen = new CustomerGenerator(arrivals, servicePoint);
         System.out.println("All customers added to the queue: " + servicePoint.getQueue());
-
-
-        // Xử lý khách hàng trong hàng đợi và in thời gian ở lại hệ thống
+        // initialize the clock
         Clock clock = Clock.getInstance();
         // clock start from time of the last arrival event
         double lastArrivalTime = arrivals.get(arrivals.size() - 1).getEventTime();
         clock.setTime(lastArrivalTime);
-
+        // serve customers
         System.out.println("Customer service results:");
         servicePoint.serve(Clock.getInstance());
 
-        // In thời gian cuối cùng của đồng hồ
+        // print final clock time
         System.out.println("Final clock time: " + clock.getTime());
     }
 
