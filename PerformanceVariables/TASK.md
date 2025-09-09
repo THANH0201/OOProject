@@ -57,9 +57,8 @@ In the B-phase coding, Execute event by getting method associated with event typ
         execute_arrival(next_event) (Arrival class)  
     if next_event.type == "departure"  
         execute_departure(next_event)  
-3. what coding C events means?  
-
-In the C-phase coding, the simulation checks if there are any C-events in the CEventList class. 
+3. what coding C events means?
+In the C-phase coding, the simulation checks if there are any C-events in the CEventList class.  
 If there are, it executes them one by one using their associated methods. If not, it checks if the simulation should end or return to the A-phase.
     
 
